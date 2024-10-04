@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #121212; /* Dark background */
+            color: #f4f4f9; /* Light text color */
             margin: 0;
             padding: 20px;
         }
-        h1 {
-            color: #4a90e2;
+        h1, h2 {
+            color: #4a90e2; /* Accent color */
         }
         .profile {
             text-align: center;
@@ -24,7 +24,10 @@
             width: 150px;
             height: 150px;
         }
-        .interests {
+        .interests, .projects, .contact {
+            background-color: #1e1e1e; /* Darker boxes */
+            border-radius: 8px;
+            padding: 15px;
             margin: 20px 0;
         }
         a {
@@ -34,24 +37,39 @@
         a:hover {
             text-decoration: underline;
         }
-        .projects {
-            margin-top: 20px;
+        .project {
+            margin-bottom: 15px;
         }
         footer {
             text-align: center;
             margin-top: 40px;
             font-size: 0.9em;
         }
+        .bar {
+            height: 5px;
+            background-color: #4a90e2; /* Blue bar */
+            margin: 10px 0;
+        }
+        .project-image {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="profile">
-        <img src="your-photo.jpg" alt="Zak Mohamed">
+        <img src="zak_image.jpg" alt="Zak Mohamed">
         <h1>Hello, I am Zak Mohamed! Welcome to my digital hub.</h1>
     </div>
     
     <div class="interests">
         <h2>My Interests:</h2>
+        <div class="bar"></div>
         <ul>
             <li>Data Science: Uncovering insights from data to drive decisions.</li>
             <li>Machine Learning: Building models that learn from data and improve over time.</li>
@@ -61,18 +79,37 @@
 
     <div class="projects">
         <h2>My Projects:</h2>
-        <ul>
-            <li><a href="https://github.com/Zmohameddd/Data-Science-Projects/blob/main/SpaceX%20Falcon%209%20Landing%20Prediction.ipynb" target="_blank">SpaceX Falcon 9 Landing Prediction</a></li>
-            <li><a href="https://github.com/Zmohameddd/Data-Science-Projects/blob/main/Anomaly%20Detection%20of%20Network%20Traffic.ipynb" target="_blank">Anomaly Detection of Network Traffic Data</a></li>
-            <li><a href="https://github.com/Zmohameddd/Engineering-Projects" target="_blank">Semi-Automated Camera Vehicle System</a></li>
-        </ul>
+        <div class="bar"></div>
+        <div class="project">
+            <img src="falcon_9.gif" alt="SpaceX Falcon 9 Landing Prediction" class="project-image">
+            <a href="https://github.com/Zmohameddd/Data-Science-Projects/blob/main/SpaceX%20Falcon%209%20Landing%20Prediction.ipynb" target="_blank">SpaceX Falcon 9 Landing Prediction</a>
+        </div>
+        <div class="project">
+            <img src="intrusion.png" alt="Anomaly Detection of Network Traffic" class="project-image">
+            <a href="https://github.com/Zmohameddd/Data-Science-Projects/blob/main/Anomaly%20Detection%20of%20Network%20Traffic.ipynb" target="_blank">Anomaly Detection of Network Traffic Data</a>
+        </div>
+        <div class="project">
+            <img src="camera_car.jpeg" alt="Semi-Automated Camera Vehicle System" class="project-image">
+            <a href="https://github.com/Zmohameddd/Engineering-Projects" target="_blank">Semi-Automated Camera Vehicle System</a>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Me:</h2>
+        <div class="bar"></div>
+        <p>Email: <a href="mailto:zakmohamed08@outlook.com">zakmohamed08@outlook.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/zak-mohamed-445a552b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZFim7SeOS12AUWe4kV%2Bi%2FA%3D%3D" target="_blank">Zak Mohamed</a></p>
+        <p><a href="Zak_Mohamed_Resume.pdf" target="_blank">Download My Resume</a></p>
+        <p><a href="Zak_Mohamed_Transcript.pdf" target="_blank">Download My Transcript</a></p>
     </div>
 
     <footer>
-        <h2>Contact Me:</h2>
-        <p>Email: <a href="mailto:zakmohamed08@outlook.com">zakmohamed08@outlook.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/zak-mohamed-445a552b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZFim7SeOS12AUWe4kV%2Bi%2FA%3D%3D" target="_blank">Zak Mohamed</a></p>
-        <p><a href="your-resume.pdf" target="_blank">Download My Resume</a></p>
+        <h2>Let’s Connect!</h2>
+        <div class="social-links">
+            <a href="https://github.com/Zmohameddd" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/zak-mohamed-445a552b5/" target="_blank">LinkedIn</a>
+        </div>
+        <p>© 2023 Zak Mohamed. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
